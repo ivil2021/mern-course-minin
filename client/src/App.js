@@ -1,16 +1,11 @@
 import React from 'react';
+// import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { useRoutes } from './routes';
 import 'materialize-css';
 
-console.log('123');
-
 function App() {
-    console.log('456');
-
-    const routes = useRoutes(false);
-    console.log('789');
-    console.log(routes);
+    const routes = useRoutes(true);
     return (
         <Router>
             <div className="container">{routes}</div>
@@ -19,3 +14,14 @@ function App() {
 }
 
 export default App;
+
+// class App extends Component() {
+//     render() {
+//         const routes = useRoutes(false);
+//         return (
+//             <Router>
+//                 <div className="container">{routes}</div>
+//             </Router>
+//         );
+//     }
+// }

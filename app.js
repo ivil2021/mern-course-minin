@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const app = express(); //our future server
 
 //регистрируем роуты, которые будут по-разному обрабатывать наши апи запросы с фронтенда
-app.use('/api/auth', require('./routes/auth.routes'));
+// app.use('/api/auth', require('./routes/auth.routes'));
 
 const PORT = config.get('port') || 5000;
 

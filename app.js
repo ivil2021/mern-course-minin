@@ -4,6 +4,8 @@ const mongoose = require('mongoose');
 
 const app = express(); //our future server
 
+app.use(express.json({ extended: true }));
+
 //регистрируем роуты, которые будут по-разному обрабатывать наши апи запросы с фронтенда
 // app.use('/api/auth', require('./routes/auth.routes'));
 
